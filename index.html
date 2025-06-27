@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Personal Portfolio, To-Do List & Products</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #0f2485, #330462); color: #fff; }
+nav { position: sticky; top: 0; background: rgba(0,0,0,0.8); padding: 15px; text-align: center; }
+nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+nav a:hover { color: #ffe600; }
+section { padding: 40px; border-bottom: 1px solid rgba(255,255,255,0.3); text-align: center; }
+h2 { font-size: 2em; color: #ffe600; }
+#productList div, #taskList li { background: rgba(255,255,255,0.1); padding: 15px; margin: 5px 0; border-radius: 5px; }
+#productList div:hover, #taskList li:hover { background: rgba(255,255,255,0.25); }
+input, select, button { padding: 8px; margin: 5px; border-radius: 3px; border: none; }
+input, select { background: rgba(255,255,255,0.8); color: #333; }
+button { background: #ffe600; color: #333; font-weight: bold; cursor: pointer; }
+button:hover { background: #ffd000; }
+@media (max-width:600px) { section { padding:20px;} nav a { display: block; margin: 5px 0; } }
+</style>
+</head>
+<body>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+<a href="#todo">To-Do</a>
+<a href="#productsList">Products</a>
+</nav>
+<section id="about">
+<h2>About Me</h2>
+<p>Hi! I’m a passionate web developer with a keen interest in creating clean, user-friendly, and impactful digital experiences. I specialize in HTML, CSS, JavaScript, and modern frameworks that help bring ideas to life on the web.
+
+With a strong focus on responsive design and an eye for aesthetics, I enjoy tackling challenging projects that test my coding and problem-solving abilities. Whether it’s building sleek interfaces, adding interactive features, or making sure an application is optimized for performance, I’m always striving to learn and improve.
+
+I’m currently open to exciting opportunities where I can contribute my skills and grow as a developer. Let’s build something amazing together!</p>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<p>Here are a few of my featured projects: A Personal Portfolio, To-Do List, and Product Listing Page. Stay tuned for more!</p>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: nithishakeshaboina@gmail.com | Phone: 8008628032</p>
+</section>
+<section id="todo">
+  <h2>To-Do List</h2>
+  <input id="taskInput" placeholder="Enter a new task" />
+  <button id="addBtn">Add</button>
+  
+  <ul id="taskList"></ul>
+</section>
+<section id="productsList">
+<h2>Product Listing</h2>
+<select id="categoryFilter">
+<option value="all">All Categories</option>
+<option value="electronics">Electronics</option>
+<option value="clothing">Clothing</option>
+</select>
+<select id="sortOption">
+<option value="priceLow">Price: Low to High</option>
+<option value="priceHigh">Price: High to Low</option>
+<option value="rating">Top Rated</option>
+</select>
+<div id="productList"></div>
+</section>
+</body>
+</html>
